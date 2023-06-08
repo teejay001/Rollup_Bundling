@@ -1,0 +1,55 @@
+{
+  "name": "ojs-functions",
+  "version": "1.0.0",
+  "scripts": {
+    "clean": "rimraf ../dist/functions",
+    "build": "npm run clean && rollup --environment BUILD:production --bundleConfigAsCjs --config rollup.config.js",
+    "build:dev": "npm run clean && rollup --bundleConfigAsCjs --config rollup.config.js",
+    "lint": "eslint \"**/*.ts\" --ignore-pattern node_modules/",
+    "lint:fix": "eslint --fix \"**/*.ts\" --ignore-pattern node_modules/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bundledDependencies": [
+    "ojs-common"
+  ],
+  "dependencies": {
+    "axios": "0.26.0",
+    "dotenv": "10.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.15.0",
+    "@babel/plugin-proposal-class-properties": "7.10.1",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "7.8.3",
+    "@babel/plugin-proposal-optional-chaining": "7.9.0",
+    "@babel/preset-env": "7.15.0",
+    "@babel/preset-typescript": "7.16.0",
+    "@rollup/plugin-alias": "^5.0.0",
+    "@rollup/plugin-babel": "6.0.3",
+    "@rollup/plugin-commonjs": "25.0.0",
+    "@rollup/plugin-eslint": "9.0.4",
+    "@rollup/plugin-node-resolve": "15.0.2",
+    "@rollup/plugin-typescript": "11.1.1",
+    "@types/office-js": "1.0.250",
+    "@typescript-eslint/eslint-plugin": "5.4.0",
+    "@typescript-eslint/parser": "5.4.0",
+    "babel-eslint": "10.0.3",
+    "babel-loader": "8.2.2",
+    "eslint": "7.32.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-config-airbnb-typescript": "15.0.0",
+    "eslint-import-resolver-alias": "1.1.2",
+    "eslint-plugin-import": "2.24.0",
+    "rollup": "3.23.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-generate-html-template": "1.7.0",
+    "rollup-plugin-gzip": "3.1.0",
+    "rollup-plugin-node-externals": "^6.1.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-uglify": "6.0.4",
+    "rollup-plugin-visualizer": "5.9.0",
+    "ts-loader": "8.3.0",
+    "typescript": "^5.1.3"
+  }
+}

@@ -1,0 +1,9 @@
+{
+	"typeAcquisition": {
+	  "include": [
+		  "office-js",
+		  "jest"
+		]
+	},
+	"exclude": ["node_modules", "**/node_modules/*"]
+  }

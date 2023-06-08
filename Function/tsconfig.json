@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "alwaysStrict": false,
+    "baseUrl": ".",
+    "lib": ["ES2019", "DOM"],
+    "paths": {
+      "@common/*": ["../Common/src/*"],
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*", "tests/**/*"],
+  "exclude": ["node_modules"]
+}

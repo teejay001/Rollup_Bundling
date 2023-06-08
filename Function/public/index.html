@@ -1,0 +1,33 @@
+<!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    
+    <script type="text/javascript">
+        const sleep = ms => new Promise(r => setTimeout(r, ms));
+        var functions = {
+            'default': {
+                processSendEvent: async (...args) => {
+                    if (!egressFunctions) {
+                        await sleep(100);
+                        return functions.default.processSendEvent(...args);
+                    }
+                    return egressFunctions.processSendEvent(...args);
+                }
+            }
+        }
+    </script>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+</head>
+
+<body>
+  
+</body>
+
+</html>
