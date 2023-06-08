@@ -1,4 +1,4 @@
-import { OnSendInfoInterface } from '../../Common/src/interfaces';
+import { OnSendInfoInterface } from '@common/interfaces';
 import { logMessage } from '@common/utils/logger';
 
 // eslint-disable-next-line no-undef

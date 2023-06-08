@@ -16,7 +16,7 @@ import { promisify } from "util";
 import { visualizer } from "rollup-plugin-visualizer";
 // import nodeExternals from 'rollup-plugin-node-externals';
 // const nodeExternals = require('rollup-plugin-node-externals').default;
-import alias from '@rollup/plugin-alias';
+// import alias from '@rollup/plugin-alias';
 
 const brotliPromise = promisify(brotliCompress);
 const distDir = '../dist/functions';
@@ -78,11 +78,11 @@ function rollupPlugins(htmlTemplatePath) {
       babelHelpers: "bundled",
       exclude: ["node_modules/**", "dist/**"],
     }),
-    alias({
-      entries: [
-        { find: '@common', replacement: (path.resolve(__dirname,'../Common/src')).replace(/\\/g, '/') }
-      ]
-    }),
+    // alias({
+    //   entries: [
+    //     { find: '@common', replacement: (path.resolve(__dirname,'../Common/src')).replace(/\\/g, '/') }
+    //   ]
+    // }),
     // resolve({
     //   jsnext: true,
     //   modulePaths: ['../Common/**/*'],
