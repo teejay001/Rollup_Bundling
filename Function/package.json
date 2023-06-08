@@ -16,7 +16,8 @@
   ],
   "dependencies": {
     "axios": "0.26.0",
-    "dotenv": "10.0.0"
+    "dotenv": "10.0.0",
+    "ojs-common": "file:../Common"
   },
   "devDependencies": {
     "@babel/core": "7.15.0",
